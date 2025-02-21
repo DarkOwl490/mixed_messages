@@ -21,6 +21,7 @@ const getRandomLoadingMessage = () => getRandomMessage('Loading Screen');
 const getRandomDeathMessage = () => getRandomMessage('Death Screen');
 // console.log(getRandomDeathMessage());
 
+// This function generates a random message for each screen category
 const generateRandomMessage = () => {
     const randomTitle = getRandomTitleMessage();
     const randomLoading = getRandomLoadingMessage();
