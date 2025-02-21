@@ -20,3 +20,14 @@ const getRandomLoadingMessage = () => getRandomMessage('Loading Screen');
 // console.log(getRandomLoadingMessage());
 const getRandomDeathMessage = () => getRandomMessage('Death Screen');
 // console.log(getRandomDeathMessage());
+
+const generateRandomMessage = () => {
+    const randomTitle = getRandomTitleMessage();
+    const randomLoading = getRandomLoadingMessage();
+    const randomDeath = getRandomDeathMessage();
+    console.log(`Main Menu: ${randomTitle}`);
+    console.log(`Loading Screen: ${randomLoading}`);
+    console.log(`Death Screen: ${randomDeath}`);
+}
+
+generateRandomMessage();
